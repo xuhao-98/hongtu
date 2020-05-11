@@ -1,0 +1,484 @@
+#content {
+  width: 100%;
+}
+/* model  start*/
+#content .model {
+  position: relative;
+  width: 100%;
+  height: 750px;
+  background-color: #eee;
+}
+
+.model .model-title {
+  width: 100%;
+  height: 57px;
+  padding-top: 108px;
+}
+
+.model .model-title>a {
+  display: block;
+  text-align: center;
+}
+
+.model .model-title>a>h3 {
+  font-size: 30px;
+  font-weight:bolder;
+}
+.model .model-title>a>p {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.model .model-cont {
+  margin-top: 65px;
+  width: 100%;
+  height: 190px;
+}
+
+.model .model-cont>ul {
+  width: 1208px;
+  margin: 0 auto;
+}
+
+.model-cont .model-cont-item {
+  width: 280px;
+  height: 190px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-left: 20px;
+  border: 1px solid #EEE;
+  transition: .3s;
+}
+
+.model-cont .model-cont-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #918d8d;
+  background: rgb(240, 50, 50);
+}
+
+.model-cont .model-cont-item:hover>a>.iconfont,
+.model-cont .model-cont-item:hover>a>.model-cont-intro {
+  color: #fff;
+}
+
+.model-cont .model-cont-item>a>.iconfont {
+  font-size: 75px;
+  vertical-align: text-bottom;
+}
+
+.model-cont .model-cont-item>a>.model-cont-intro {
+  display: inline-block;
+  width: 200px;
+  padding-top: 28px;
+  border-radius: 5px;
+}
+
+.model-cont .model-cont-item>a>.model-cont-intro>h3 {
+  font-size: 20px;
+  font-weight: normal;
+  text-align: center;
+  margin: 8px 0 15px;
+}
+
+.model-cont .model-cont-item>a>.model-cont-intro>p {
+  text-indent: 2em;
+}
+
+.model-cont .model-cont-item>a>.model-cont-intro>.icon-jiantou {
+  font-size: 30px;
+}
+
+.model .model-info {
+  width: 1200px;
+  height: 127px;
+  margin: 60px auto 0;
+  text-align: center;
+}
+
+.model .model-info>h2,
+.model .model-info>p {
+  margin-bottom: 15px;
+}
+/* model  end */
+
+/* hotspot start */
+#content .hotspot {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url("../../images/index/hotspot.jpg") no-repeat;
+  background-position: 0px  -150px;
+  background-size: cover;
+}
+.hotspot .hotspot-title {
+  width: 100%;
+  height: 57px;
+  padding-top: 108px;
+}
+
+.hotspot .hotspot-title>a {
+  display: block;
+  text-align: center;
+}
+
+.hotspot .hotspot-title>a>h3 {
+  font-size: 30px;
+  font-weight:bolder;
+}
+.hotspot .hotspot-title>a>p {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.hotspot .hotspot-cont {
+  margin-top: 55px;
+  width: 100%;
+  height: 150px;
+}
+
+.hotspot .hotspot-cont>ul {
+  width: 340px;
+  margin: 0 auto; 
+}
+
+.hotspot-cont .hotspot-cont-item {
+  width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: .3s;
+}
+
+.hotspot-cont .hotspot-cont-item:hover {
+  transform: translateZ(5px);
+}
+
+.hotspot-cont .hotspot-cont-item:hover>a>h3,
+.hotspot-cont .hotspot-cont-item:hover>a>.iconfont {
+  color: rgb(240, 50, 50);
+}
+
+.hotspot-cont .hotspot-cont-item>a {
+  display: block;
+  height: 150px;
+  text-align: center;
+}
+
+.hotspot-cont .hotspot-cont-item>a>.iconfont {
+  font-size: 70px;
+  line-height: 100px;
+}
+
+/* hotspot  end */
+/* history  start */
+#content .history {
+  position: relative;
+  width: 100%;
+  height: 850px;
+  background-color: #eee;
+}
+
+.history .history-title {
+  width: 100%;
+  height: 57px;
+  padding-top: 108px;
+}
+
+.history .history-title>a {
+  display: block;
+  text-align: center;
+}
+
+.history .history-title>a>h3 {
+  font-size: 30px;
+  font-weight:bolder;
+}
+.history .history-title>a>p {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.history .history-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.history .history-cont>ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.history .history-cont .history-choose {
+  display: inline-block;
+  margin-left: 20px;
+  cursor: default;
+}
+
+.history .history-cont li.active {
+  border-bottom: 2px solid #333;
+}
+
+.history .history-conts {
+  display: none;
+  width: 900px;
+  margin: 30px auto 0;
+}
+
+.history .history-conts.on {
+  display: block;
+}
+.history .history-conts>.history-lists  {
+  width: 880px;
+  margin: 0 auto;
+}
+
+.history .history-conts .history-list {
+  display: inline-block;
+  width: 860px;
+  height: 110px;
+  margin: 10px;
+  background-color: #eee;
+  margin-bottom: 5px;
+}
+
+.his-con {
+  position: relative;
+  padding: 10px 5px;
+}
+
+.his-con .his-con-photo {
+  height: 90px;
+  width: 125px;
+}
+
+.his-con .his-con-msg {
+  position: absolute;
+  left: 150px;
+}
+
+.his-con-item {
+  position: absolute;
+  top: 35px;
+  left: 150px;
+  width: 710px;
+  height: 45px;
+}
+
+.his-con-item .his-con-time {
+  display: block;
+  margin-top: 5px;
+  text-indent: 2em;
+}
+
+#sub {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  border: 0;
+  border: 2px solid #444;
+  border-radius: 5px;
+  background-color: #444;
+  color: #fff;
+  outline: none;
+}
+
+.history-conts .his-sub {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.history-conts .his-sub>a {
+  display: block;
+  overflow: hidden;
+}
+
+.history-conts .his-sub>a .submit:hover {
+  background-color: rgb(240, 50, 50);
+  color: #000;
+}
+
+.history-conts .his-sub>a .submit {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  background-color: #444;
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* history  end */
+/* policy start  */
+#content .policy {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: url("../../images/index/policy.jpg") no-repeat;
+  background-position: -5px  0px;
+  background-size: cover;
+}
+
+.policy .policy-title {
+  width: 100%;
+  height: 57px;
+  padding-top: 90px;
+}
+
+.policy .policy-title>a {
+  display: block;
+  text-align: center;
+}
+
+.policy .policy-title>a>h3 {
+  font-size: 30px;
+  font-weight:bolder;
+}
+.policy .policy-title>a>p {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.policy .policy-intro {
+  width: 60%;
+  margin: 50px auto 0;
+  font-size: 20px;
+}
+.policy-intro::after {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  content: "";
+  width: 60%;
+  height: 1px;
+  background-color: #000;
+}
+.policy .policy-intro>p {
+  text-indent: 2em;
+}
+
+.policy .policy-cont {
+  margin-top: 55px;
+  width: 100%;
+  height: 150px;
+}
+.policy .policy-cont>ul {
+  width: 300px;
+  margin: 0 auto; 
+}
+
+.policy-cont .policy-cont-item {
+  width: 115px;
+  height: 150px;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: .3s;
+}
+
+
+.policy-cont .policy-cont-item:hover {
+  transform: translateZ(5px);
+}
+
+.policy-cont .policy-cont-item>a:hover >h3,
+.policy-cont .policy-cont-item>a:hover >.iconfont {
+  color: #fff;
+}
+
+.policy-cont .policy-cont-item>a {
+  display: block;
+  height: 150px;
+  text-align: center;
+}
+
+.policy-cont .policy-cont-item>a>.iconfont {
+  font-size: 70px;
+  line-height: 100px;
+}
+
+/* policy end */
+
+/* district start */
+#content .district {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background-color: #eee;
+}
+
+.district .district-title {
+  width: 100%;
+  height: 57px;
+  padding-top: 90px;
+}
+
+.district .district-title>a {
+  display: block;
+  text-align: center;
+}
+
+.district .district-title>a>h3 {
+  font-size: 30px;
+  font-weight:bolder;
+}
+.district .district-title>a>p {
+  font-size: 20px;
+  font-weight:bold;
+}
+
+.district .district-cont {
+  width: 1012px;
+  height: 350px;
+  margin: 65px auto;
+}
+.district-cont .district-cont-item {
+  overflow: hidden;
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 10px 17px 10px 18px;
+  border: 1px solid #EEE;
+  transition: .5s;
+}
+
+.district-cont .district-cont-item>a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.district-cont .district-cont-item>a>img:hover {
+  opacity: .7;
+}
+
+.district-cont .district-cont-item>a>.icon-jiantou {
+  font-size: 26px;
+  vertical-align: top;
+}
+
+.district-cont .district-cont-item:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #918d8d;
+}
+
+
+/* district end */
+/* hero start */
+#content .hero {
+  position: relative;
+  width: 100%;
+}
+
+/* hero end */

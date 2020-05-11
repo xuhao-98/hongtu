@@ -1,0 +1,107 @@
+#article {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#article .guide {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.guide>a {
+  color: #666;
+  display: inline-block;
+}
+
+.guide>.jiantou {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.art-title {
+  width: 1000px;
+  margin: 22px 0;
+}
+
+.art-title .art-title-top {
+  position: relative;
+  font-size: 26px;
+  color: red;
+  font-weight: bold;
+  left: 23px;
+  margin-bottom: 50px;
+}
+
+.art-title .art-title-top::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 30px;
+  left: -23px;
+  top: 3px;
+  background-color: #f00;
+}
+.art-title .art-title-top::after{
+  position: absolute;
+  content: "";
+  width: 1000px;
+  height: 1px;
+  left: -23px;
+  top: 53px;
+  background-color: #f00;
+}
+.content{
+  display: flex;
+  width: 1000px;
+}
+.art-cont {
+  width: 490px;
+  margin: 90px 0 ;
+}
+.art-cont:nth-child(odd) {
+  margin-right:20px ;
+}
+
+.art-cont .art-cont-top {
+  position: relative;
+  font-size: 26px;
+  color: red;
+  font-weight: bold;
+  left: 23px;
+  margin-bottom: 20px;
+}
+
+.art-cont .art-cont-top::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 30px;
+  left: -23px;
+  top: 3px;
+  background-color: #f00;
+}
+.art-cont .art-cont-top::after{
+  position: absolute;
+  content: "";
+  width: 490px;
+  height: 1px;
+  left: -23px;
+  top: 53px;
+  background-color: #f00;
+}
+.art-content{
+  overflow: hidden;
+  width: 490px;
+  min-height: 100px;
+}
+.art-content .art-content-title{
+  margin: 10px 0;
+  width: 490px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.art-content .art-content-title:hover{
+  color: red;
+}

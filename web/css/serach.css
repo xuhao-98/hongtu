@@ -1,0 +1,46 @@
+#article {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#article .guide {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.guide>a {
+  color: #666;
+  display: inline-block;
+}
+
+.guide>.jiantou {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.art-content{
+  margin-top:25px;
+  width: 1000px;
+  min-height: 110px;
+}
+.art-content>.news-title>h3{
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.art-content>.news-title>h3>a{
+  color: red;
+}
+.art-content>.news-time{
+  margin: 15px 0 15px 0;
+  color: #999;
+}
+.art-content>.news-cont>p{
+  width: 1000px;
+  overflow: hidden;
+  white-space: wrap;
+  text-overflow: clip;
+  text-indent: 2em;
+}

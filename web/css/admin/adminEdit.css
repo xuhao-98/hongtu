@@ -1,0 +1,63 @@
+#title{
+  position: absolute;
+  top: 90px;
+  left: 13%;
+  width: 300px;
+  height: 30px;
+  font-weight: bolder;
+  font-size: 18px;
+}
+#title>.ipt{
+  position: absolute;
+  top: -2px;
+  left:80px;
+  height: 30px;
+  background: none;
+  border: none;
+  line-height: 30px;
+  outline: none;
+  border: 1px solid #aaa;
+}
+#title>.ipt:focus{
+  outline: none;
+}
+#select{
+  position: absolute;
+  left: 40%;
+  top: 90px;
+}
+#div3 {
+  width:1000px;
+  height: 500px;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#text1{
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#btn1{
+  position: absolute;
+  top: 590px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+  border-radius: 5px;
+  background: none;
+  border: none;
+  outline: none;
+  background: #00A1D6;
+  cursor: pointer;
+  color: #fff;
+}
+#btn1:hover{
+opacity: .8;
+}
+.w-e-text-container{
+  height: 400px !important;/*!important是重点，因为原div是行内样式设置的高度300px*/
+}

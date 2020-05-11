@@ -1,0 +1,55 @@
+#article {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+#article .guide {
+  margin-top: 25px;
+  font-size: 14px;
+  color: #666;
+}
+
+.guide>a {
+  color: #666;
+  display: inline-block;
+}
+
+.guide>.jiantou {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.art-title {
+  width: 1000px;
+  margin: 110px 0;
+}
+
+.art-title .art-title-top {
+  font-size: 40px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.art-title .art-title-time {
+  position: relative;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.art-title .art-title-time::after {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  height: 1px;
+  background-color: #666;
+  top: 33px;
+  left: 0px;
+}
+.art-content{
+  margin-top: 60px;
+  width: 1000px;
+  min-height: 500px;
+}
+
+

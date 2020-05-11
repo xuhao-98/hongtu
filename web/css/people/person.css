@@ -1,0 +1,304 @@
+body{
+  background-color: #aaa;
+}
+#wrap {
+  position: relative;
+  width: 1200px;
+  margin: 15px auto;
+  background-color: #fff;
+  z-index: 0;
+}
+
+#wrap>ul {
+  width: 100px;
+  height: 300px;
+  border-right: 1px solid #aaa;
+}
+#wrap .active {
+  background-color:rgb(240,50,50);
+}
+
+#wrap .con-list {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-bottom: 1px solid #aaa;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  transition: .6s;
+}
+#wrap .con-list .iconfont {
+  font-size: 24px;
+  vertical-align: middle;
+}
+
+#wrap .con-list span {
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+#wrap .cont {
+  position: absolute;
+  width: 1100px;
+  height: 550px;
+  background-color: #fff;
+  top: 0px;
+  left: 102px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#wrap .cont .cont-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #aaa;
+}
+
+#wrap .cont .cont-title .cont-txt {
+  font-size: 22px;
+  font-weight: bold;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+/* 个人资料 start*/
+.cont-img {
+  position: relative;
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.cont-img>img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 16px auto 0;
+}
+
+.cont-img>a>.cont-img-update {
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: -2px;
+  font-size: 16px;
+  color: #3399ea;
+  width: 80px;
+}
+.cont-img>.sub {
+  position: absolute;
+  top: 200px;
+  left: 28px;
+  font-size: 16px;
+  color: #fff;
+  background: none;
+  border: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  background: #00A1D6;
+}
+.cont-img>.sub:hover {
+  opacity: 0.8;
+}
+.cont-img>.cont-img-up{
+  position: absolute;
+  top: 125px;
+  left: 10px;
+  padding: 4px 10px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #999;
+  color: #fff;
+  background: #00A1D6;
+  border-radius: 5px;
+}
+.cont-img>.cont-img-up:hover{
+  cursor: pointer;
+  opacity: .8;
+}
+
+.cont-id {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.cont-id .id-name {
+  font-size: 18px;
+  margin-right: 16px;
+  margin-top: 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+.cont-info {
+  margin: 5px 0 0  120px;
+  padding-bottom:10px ;
+  border-bottom: 1px solid #aaa;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.cont-info span {
+  font-size: 16px;
+
+}
+.cont-msg{
+  padding-left: 120px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  user-select: none;
+}
+.cont-edit{
+  outline: none;
+  border: none;
+  background: none;
+  border: 2px solid #333;
+  height: 25px;
+  line-height: 25px;
+  border-radius: 5px;
+}
+.cont-edit:hover{
+  border: 2px solid #00A1D6;
+}
+button[type="submit"]{
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 30px;
+  outline: none;
+  border: none;
+  background: none;
+  background: #00A1D6;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+button[type="submit"]:hover{
+  opacity: .8;
+}
+/* 个人资料 end*/
+
+/* 我的收藏 start*/
+.cont-infos{
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #aaa;
+  box-sizing: border-box;
+}
+.cont-infos>h3{
+  margin-bottom: 15px;
+}
+.cont-infos>.cancel{
+  display: inline-block;
+  margin-top: -55px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* 我的收藏 end*/
+/* 我的关注 start*/
+
+#wrap .cont .cont-title>span {
+  font-size: 18px;
+}
+.cont-person{
+  padding: 10px;
+}
+.cont-person>img{
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.cont-person>span{
+  margin-left: 10px;
+  vertical-align: middle;
+  font-size: 18px;
+}
+.cont-person>button{
+  display: inline-block;
+  margin-top: 10px;
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  border: none;
+  background: none;
+  outline: none;
+  background: #3399ea;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+.cont-person>button:hover{
+  opacity: .8;
+}
+/* 我的关注 end*/
+/* 我的评论 start*/
+.title img {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.title img.active {
+  display: block;
+}
+
+.list {
+  position: absolute;
+  top: 45px;
+  width: 1038px;
+  margin: 50px auto 0;
+}
+
+.list >li {
+  height: 60px;
+  border: 1px solid #ccc;
+  padding: 2px 0;
+}
+
+.list> li> img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.list p {
+  float: left;
+  width: 966px;
+  line-height: 60px;
+  text-indent: 20px;
+}
+/* 我的评论 end*/

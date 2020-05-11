@@ -1,0 +1,113 @@
+.loginbg>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 360px;
+  background: #fff;
+  height: 500px;
+  padding: 30px 40px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.three {
+  letter-spacing: 5px;
+}
+
+.two {
+  letter-spacing: 12px;
+}
+
+.ipt {
+  position: relative;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #aaa;
+  margin: 0 10px;
+}
+
+.ipt::after {
+  position: absolute;
+  content: "";
+  top: 42px;
+  left: 0px;
+  width: 0px;
+  height: 2px;
+  background-color: #f00;
+  transition: .8s;
+}
+
+.ipt:hover::after {
+  width: 100%;
+}
+
+input.box {
+  width: 170px;
+  height: 30px;
+  padding-left: 10px;
+  outline: none;
+  border: 0;
+}
+
+input {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#sub {
+  display: block;
+  width: 65%;
+  height: 40px;
+  margin: 10px auto 0;
+  border-radius: 20px;
+  outline: none;
+  border: 0;
+  border: 2px solid #444;
+}
+
+#agree {
+  vertical-align: baseline;
+  margin: 20px 0px 10px 65px;
+}
+
+p{
+  height: 20px;
+  font-size: 14px;
+  text-indent: 12px;
+  color: #f00;
+}
+.bottom-txt{
+  width: 126px;
+  margin:10px auto;
+}
+.login-link {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+}
+
+.login-link:hover {
+  border-bottom: none;
+  color: rgb(240, 50, 50);
+}

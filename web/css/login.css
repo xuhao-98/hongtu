@@ -1,0 +1,100 @@
+.loginbg>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.login-form {
+  width: 360px;
+  background: #fff;
+  height: 450px;
+  padding: 60px 40px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.txtb {
+  border-bottom: 2px solid #adadad;
+  position: relative;
+  margin: 30px 0;
+}
+
+.txtb .txt {
+  font-size: 15px;
+  color: #333;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0 5px;
+  height: 40px;
+}
+
+.txtb .span {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+
+.txtb .tips::before {
+  content: attr(data-placeholder);
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  z-index: -1;
+  transition: .5s;
+}
+
+.txtb .tips::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: rgb(240, 50, 50);
+  transition: .5s;
+}
+
+.focus+.tips::before {
+  top: -5px;
+}
+
+.focus+.tips::after {
+  width: 100%
+}
+
+.but {
+  display: block;
+  width: 65%;
+  height: 40px;
+  margin: 10px auto 0;
+  border-radius: 20px;
+  outline: none;
+  border: 0;
+  border: 2px solid #444;
+}
+.bottom-txt{
+  width: 126px;
+  margin:10px auto;
+}
+.login-link {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+}
+
+.login-link:hover {
+  border-bottom: none;
+  color: rgb(240, 50, 50);
+}

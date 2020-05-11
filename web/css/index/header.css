@@ -1,0 +1,262 @@
+#container{
+  width: 100%;
+}
+#header{
+  position: relative;
+  width: 100%;
+  height: 560px;
+} 
+
+/* 导航栏 start */
+
+nav{
+  position: fixed;
+  display: flex;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1250px;
+  height: 70px;
+  z-index: 999;
+  background-color: #eee;
+}
+.logo{
+  width: 170px;
+  height: 70px; 
+  line-height: 70px;  
+}                
+.logo a>img{
+  vertical-align:middle;
+}
+
+.nav-list{
+  position: relative;
+  width: 565px;
+  margin-top: 10px;
+  height:50px;
+  line-height: 50px;
+  margin-left: 165px;
+  transition: .3s;
+}
+
+.nav-list>.nav-list-link{
+  position: relative;
+  width:65px; 
+  margin-left: 15px;
+
+}
+.nav-list>.nav-list-link>.nav-list-click:hover{
+ border-bottom: 1px solid #333;
+} 
+.nav-list>.nav-list-link>.nav-list-click{
+  width:65px;
+  text-align: center;
+  font-size: 16px;
+
+}
+.nav-list>.nav-list-link>.nav-list-click::after{
+  display: none;
+  position: absolute;
+  content: "";
+  width: 65px;
+  height: 1px;
+  top: 33px;
+  left: 0px;
+  background-color: #333;
+}
+
+.nav-list>.nav-list-link>.on{
+  border-bottom: 1px solid #333;
+}
+
+.nav-list-link > .nav-list-con{
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 65px;
+  height: 0;
+  transition: .6s;
+  z-index: 2;
+}
+.nav-list-link > .nav-list-con >.nav-list-con-item{
+  width: 65px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: 12px;
+  background-color:rgb(240, 50, 50);;
+  border-bottom: 2px solid #eee;                                             
+}
+.nav-list-con-item > .item-intro{
+  display: block;
+  color: #000;
+}
+
+.nav-list-link:hover .nav-list-con{
+  height: 200px;
+}
+.nav-list-con-item .item-intro:hover{
+  background-color:#f88472a8 ;
+}
+
+/* 导航栏 end */
+
+/* 搜索框 start */
+
+.header-serach{
+  overflow: hidden;
+  margin-top: 15px;
+  margin-left: 10px;
+  height: 40px;
+  background-color: #5656;
+  border-radius: 40px;
+}
+.header-serach:hover .search-btn{
+  color: #fff;
+}
+.header-serach .search-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .4s;
+  line-height: 40px;
+}
+.header-serach .search-btn .icon-sousuo{
+  font-size: 28px;
+}
+.header-serach .serach-txt{
+  padding:0;
+  transition: .4s;
+  line-height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  width:150px;
+  padding-left: 20px;
+}
+/*修改输入框默认输入文字颜色*/
+input.serach-txt::-webkit-input-placeholder {
+  color: #000;
+  font-size: 14px;       
+}
+
+/* 搜索框 end */
+#loginD{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+}
+.nav-login{
+  margin:0 10px;
+}
+/* bg   start */
+
+.header-bg >.bg-link{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 0;
+}
+/* bg   end */
+/* 内容导航栏start */
+  .header-nav{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 103px;
+    background-color:rgba(0, 0, 0, 0.1);
+  }
+  .header-nav>ul{
+    display: flex;
+    width: 1204px;
+    height: 103px;
+    margin: 0 auto;
+  }
+  .header-nav>ul .nav-item{
+    width: 300px;
+    height: 103px;
+    border-right: 1px solid #fff;
+    box-sizing: border-box;
+  }
+  .header-nav .nav-item:first-child{
+    border-left: 1px solid #fff;
+  }
+  .header-nav .nav-item>a{
+    display: block;
+    height: 87px;
+    padding: 15px 35px 0;
+    text-align: left;
+  }
+  .header-nav .nav-item>a>h3{
+    font-size: 22px;
+    font-weight: bolder;
+  }
+  .header-nav .nav-item>a>p{
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .header-nav .nav-item>a:hover{
+    background-color: rgba(240,50,50,.5);
+    color: #fff;
+  }
+ 
+
+/* 内容导航栏end */
+
+/* header  结束 */
+.nav-user1 {
+  position: absolute;
+  top: 0;
+  right: 23px;
+  width: 100px;
+  height: 70px;
+  z-index: 2;
+}
+.user-photo{
+  margin:5px 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #eee;
+  cursor: pointer;
+}
+.user-photo .photo-img{
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.user-lists{
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  height: 93px;
+  background-color: #eee;
+  transition: .2s;
+}
+.user-lists .user-list>a{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid #aaa;
+}
+.user-lists .user-list>a:hover{
+  font-weight: bold;
+  color: rgb(170, 164, 164);
+  background-color: #fff;
+}
+/* 头像 end */
+

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--        private int tm_id;-->
+<!--        private String tm_title;-->
+<!--        private String tm_article;-->
+<!--        private String tm_pic;-->
+<!--        private String tm_data;-->
+<!--        private int tm_type;-->
+<mapper namespace="com.zjy.spring.mapper.ArticleMapper">
+    <select id="SelArtDao" parameterType="tm_info" resultType="tm_info">
+        select  *  from tm_info
+        <where>
+            <include refid="selCond"/>
+        </where>
+
+    </select>
+    <update id="UpArtDao" parameterType="tm_info">
+        update tm_info
+        <set>
+            <trim suffixOverrides=",">
+                <if test="tm_title!=null and tm_title!=''">
+                    tm_title = #{tm_title},
+                </if>
+                <if test="tm_article!=null and tm_article!=''">
+                    tm_article = #{tm_article},
+                </if>
+                <if test="tm_pic!=null and tm_pic!=''">
+                    tm_pic = #{tm_pic},
+                </if>
+            </trim>
+        </set>
+        where tm_id = #{tm_id}
+    </update>
+    <delete id="DelArtDao" parameterType="tm_info">
+        delete from tm_info
+        <where>
+            <trim prefixOverrides="and">
+                <if test="tm_id!=null and tm_id!=''">
+                    and tm_id=#{tm_id}
+                </if>
+                <if test="tm_title!=null and tm_title!=''">
+                    and tm_title=#{tm_title}
+                </if>
+                <if test="tm_article!=null and tm_article!=''">
+                    and tm_article=#{tm_article}
+                </if>
+                <if test="tm_pic!=null and tm_pic!=''">
+                    and tm_pic=#{tm_pic}
+                </if>
+                <if test="tm_data!=null and tm_data!=''">
+                    and tm_data=#{tm_data}
+                </if>
+            </trim>
+        </where>
+    </delete>
+    <insert id="InsArtDao" parameterType="tm_info">
+        insert into tm_info(<include refid="selRs"/>) values (<include refid="insRs"/>)
+    </insert>
+    <select id="SearchArtDao" resultType="tm_info" parameterType="tm_info">
+        select * from tm_info
+        <where>
+            <if test="tm_title!=null and tm_title!=''">
+                tm_title like "%"#{tm_title}"%" or tm_article like "%"#{tm_article}"%"
+            </if>
+        </where>
+    </select>
+    <sql id="selRs">
+        <trim suffixOverrides=",">
+            <if test="tm_id!=null and tm_id!=''">
+                tm_id,
+            </if>
+            <if test="tm_title!=null and tm_title!=''">
+                tm_title,
+            </if>
+            <if test="tm_article!=null and tm_article!=''">
+                tm_article,
+            </if>
+            <if test="tm_pic!=null and tm_pic!=''">
+                tm_pic,
+            </if>
+            <if test="tm_data!=null and tm_data!=''">
+                tm_data,
+            </if>
+            <if test="tm_type!=null and tm_type!=''">
+                tm_type,
+            </if>
+        </trim>
+    </sql>
+    <sql id="insRs">
+        <trim suffixOverrides=",">
+            <if test="tm_id!=null and tm_id!=''">
+                #{tm_id},
+            </if>
+            <if test="tm_title!=null and tm_title!=''">
+                #{tm_title},
+            </if>
+            <if test="tm_article!=null and tm_article!=''">
+                #{tm_article},
+            </if>
+            <if test="tm_pic!=null and tm_pic!=''">
+                #{tm_pic},
+            </if>
+            <if test="tm_data!=null and tm_data!=''">
+                #{tm_data},
+            </if>
+            <if test="tm_type!=null and tm_type!=''">
+                #{tm_type},
+            </if>
+        </trim>
+    </sql>
+    <sql id="selCond">
+            <if test="tm_id!=null and tm_id!=''">
+                and tm_id=#{tm_id}
+            </if>
+            <if test="tm_title!=null and tm_title!=''">
+                and tm_title=#{tm_title}
+            </if>
+            <if test="tm_article!=null and tm_article!=''">
+                and tm_article=#{tm_article}
+            </if>
+            <if test="tm_pic!=null and tm_pic!=''">
+                and tm_pic=#{tm_pic}
+            </if>
+            <if test="tm_data!=null and tm_data!=''">
+                and tm_data=#{tm_data}
+            </if>
+            <if test="tm_type!=null and tm_type!=''">
+                and tm_type=#{tm_type}
+            </if>
+    </sql>
+</mapper>

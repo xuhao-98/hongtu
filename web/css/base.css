@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+
+button,
+input,
+select,
+textarea {
+    font: 12px/24px Arial, 'Microsoft Yahei', "文悦新青年体W8", sans-serif;
+}
+
+address,
+cite,
+em,
+i {
+    font-style: normal;
+}
+
+small {
+    font-size: 12px;
+}
+
+li {
+    list-style: none;
+}
+
+legend {
+    color: #000;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%;
+    line-height: normal;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+}
+
+iframe {
+    display: block;
+}
+
+.clear:after {
+    display: block;
+    content: " ";
+    clear: both;
+
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+body {
+    font: 14px/1.5 Arial, 'Microsoft Yahei', "宋体", sans-serif;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.w {
+    width: 1250px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+

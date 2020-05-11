@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/web" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Dispatcher Servlet" removed="false">
+          <file>file://$MODULE_DIR$/src/resource/dispatcher-servlet.xml</file>
+        </fileset>
+        <fileset id="web dispatcher servlet context" name="MVC dispatcher servlet context" removed="true">
+          <file>file://$MODULE_DIR$/src/resource/dispatcher-servlet.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/resource/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/resource/dispatcher-servlet.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/resource" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/resource/mapperconfig" type="java-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Spring" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/TOM/taglibs-standard-compat-1.2.5.jar!/" />
+          <root url="jar://D:/TOM/taglibs-standard-impl-1.2.5.jar!/" />
+          <root url="jar://D:/TOM/taglibs-standard-jstlel-1.2.5.jar!/" />
+          <root url="jar://D:/TOM/taglibs-standard-spec-1.2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://D:/TOM/jstl-1.2-sources.jar!/" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/compat/src/main/java" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/impl/src/main/java" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/impl/src/test/java" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/jstlel/src/main/java" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/jstlel/src/test/java" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/spec/src/main/java" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/spec/src/test/java" />
+          <root url="jar://D:/TOM/taglibs-standard-1.2.5-source-release.zip!/taglibs-standard-1.2.5/standard-test/src/test/java" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Java EE 6-Java EE 6" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/mybatis-3.5.2" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/jar包综合/jar/mybatis-3.5.2" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/Spring" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/jar包综合/jar/Spring" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/jackson" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/jar包综合/jar/jackson" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/javax" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/jar包综合/jar/javax" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/json" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/jar包综合/jar/json" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/build/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/demo/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/generated/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/legacy/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/main/core-api/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/main/core-impl/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/main/protocol-impl/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/main/user-api/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/main/user-impl/java" />
+          <root url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11/src/test/java" />
+        </SOURCES>
+        <jarDirectory url="file://D:/jar包综合/jar/mysql-connector-java-8.0.11" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/富文本EUditor" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/jar包综合/jar/富文本EUditor" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://D:/jar包综合/jar/文件io、" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://D:/jar包综合/jar/文件io、" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/jar包综合/jar/fastjson-1.2.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://D:/jar包综合/jar/gson-2.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
